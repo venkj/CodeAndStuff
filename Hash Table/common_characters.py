@@ -1,7 +1,8 @@
-from collections import List, Counter
+from collections import Counter
+from typing import List
 
 
-def commonChars(self, words: List[str]) -> List[str]:
+def commonChars(words: List[str]) -> List[str]:
     base_count = Counter(words[0])
 
     for w in words:
@@ -18,4 +19,5 @@ def commonChars(self, words: List[str]) -> List[str]:
 
 
 if __name__ == "__main__":
-    print(commonChars(["bella", "label", "roller"]))
+    words = ["bella", "label", "roller"]
+    print(commonChars(words=words))
